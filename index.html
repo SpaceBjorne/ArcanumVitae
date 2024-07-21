@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcanum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Arcanum Vitae</h1>
+    <form id="grimoireForm">
+        <label for="creatureName">Creature Name:</label>
+        <input type="text" id="creatureName" name="creatureName" required>
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" required>
+        <label for="bodyPart">Body Part:</label>
+        <input type="text" id="bodyPart" name="bodyPart" required>
+        <label for="effect">Effect:</label>
+        <input type="text" id="effect" name="effect" required>
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+        <button type="button" onclick="saveEntry()">Save</button>
+    </form>
+    <div id="entriesContainer">
+        <h2>Saved Entries</h2>
+        <ul id="entriesList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
